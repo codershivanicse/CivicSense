@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicSense</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="#challenges">Challenges</a>
+    <a href="#report">Report Issue</a>
+    <a href="leaderboard">Leaderboard</a>
+  </nav>
+  <header>
+    <h1>CivicSense</h1>
+    <p>Small habits. Better communities.</p>
+  
+  </header>
+  <section>
+    <h2>Make Your Community Better</h2>
+    <p>Take simple civic actions every day and help create cleaner and better public spaces.</p>
+    <button >Start a Challenge
+
+    </button>
+  </section>
+
+  <section>
+    <h2>Daily Civic Challenges</h2>
+
+    <div>
+      <h3>Use the Dustbin</h3>
+      <p>Always dispose of waste properly </p>
+      <button class ="challenge-btn">Complete +10 points</button>
+    </div>
+    <div>
+      <h3>Save Water</h3>
+      <p>Don't waste water in public places.</p>
+      <button class ="challenge-btn">Complete +10 points</button>
+      
+
+    </div>
+    <div>
+      <h3> Protect Public Green Spaces</h3>
+      <p>Keep parks and plants safe.</p>
+      <button class ="challenge-btn">Complete +10 Points</button>
+    </div>
+  </section>
+
+
+
+
+<section>
+  <h2>My Civic Progress</h2>
+  <h3>Points: <span id="points">0</span></h3>
+  <p>Complete challenges to earn civic points.</p>
+</section>
+
+<section> 
+  <h2>Report a Civic Issue</h2>
+  <label for="issue">Select an issue:</label>
+  <select id="issue">
+    <option>Choose an issue</option>
+    
+    <option>Littering</option>
+    <option>Water Wastage</option>
+    <option>Damage public Property</option>
+    <option>Open Garbage</option>
+  </select>
+    <textarea id ="description" 
+    placeholder="Describe the issue..."></textarea> 
+    <input type="text" id="location"
+    placeholder="Enter Location ">
+    <input type="file" id="issuePhoto" accept="image/*">
+  <br><br>
+  <button id="reportbtn">Report Issue</button>
+  
+  <p id="reportMessage"></p>
+  
+</section>
+
+
+  <section>
+    <h2>Community Leaderboard</h2>
+
+    <p>🏆 You — <span id="myPoints">0</span> points</p>
+    <p>🥈 Rahul — 120 points</p>
+    <p>🥉 Priya — 100 points</p>
+</section>
+</section>
+
+<script src ="script.js"></script>
+</body>
+</html>
